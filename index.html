@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Meu Melhor Amigo 🐶</title>
+    <meta name="theme-color" content="#377dd5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Meu Melhor Amigo">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="brand">🐾 <span>Meu Melhor Amigo</span></div>
+            <p class="muted">Cuidado com carinho, todos os dias.</p>
+            <nav id="nav"></nav>
+            <div class="sidebottom"><button id="themeBtn" class="ghost">🌙 Alternar tema</button>
+                <p class="muted small">Dados salvos neste navegador</p>
+            </div>
+        </aside>
+        <main>
+            <header>
+                <div>
+                    <p class="eyebrow">SEU COMPANHEIRO, SUA ROTINA</p>
+                    <h1 id="pageTitle">Visão geral</h1>
+                </div>
+                <div class="headerActions"><select id="dogSelect" aria-label="Selecionar cachorro"></select><button
+                        class="primary" id="newDog">+ Cadastrar cachorro</button></div>
+            </header>
+            <div id="notice" role="status"></div>
+            <div id="content"></div>
+        </main>
+    </div>
+    <dialog id="modal">
+        <form id="modalForm">
+            <div class="modalTop">
+                <h2 id="modalTitle"></h2><button type="button" class="iconbtn" id="closeModal"
+                    aria-label="Fechar">✕</button>
+            </div>
+            <div id="modalFields" class="formgrid"></div>
+            <footer><button type="button" class="ghost" id="cancelModal">Cancelar</button><button type="submit"
+                    class="primary">Salvar</button></footer>
+        </form>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>
