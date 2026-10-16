@@ -1,0 +1,18 @@
+{
+    "name": "Meu Melhor Amigo — Cuidados com Cachorros",
+    "short_name": "Meu Melhor Amigo",
+    "description": "Alimentação, passeios, vacinas e medicamentos dos seus cachorros.",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "background_color": "#f5f8fc",
+    "theme_color": "#377dd5",
+    "icons": [
+        {
+            "src": "icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ]
+}
